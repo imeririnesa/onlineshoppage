@@ -24,7 +24,7 @@ Explore the live version of the project at: [https://rinesaimeri-tnzonlineshop.n
 
 ## Installation
 
-npm install- to install node modules
-npm run dev-  to run the project
+- npm install- to install node modules
+- npm run dev-  to run the project
 
 
