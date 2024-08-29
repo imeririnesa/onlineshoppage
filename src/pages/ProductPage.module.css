@@ -1,0 +1,258 @@
+.productPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageHolder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 67vh;
+  overflow: hidden;
+}
+
+.imageHolder > img {
+  width: 100%;
+  flex: 1;
+  object-fit: top;
+}
+
+.contentHolder {
+  margin-top: 64vh;
+  position: relative;
+  border-radius: 22px 22px 0 0;
+  background-color: white;
+}
+
+.contentHolder::after {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 50px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.ratingReviews {
+  display: flex;
+  padding-inline: 10px;
+  margin-bottom: 10px;
+  gap: 2px;
+}
+
+.ratingReviews i {
+  color: rgb(218, 222, 4);
+  margin-right: 5px;
+}
+
+.ratingReviews span {
+  font-size: smaller;
+}
+.productInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10px;
+  padding-top: 15px;
+  border-radius: 0;
+  margin-bottom: 5px;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.infoWrapper p {
+  font-size: smaller;
+  color: #777;
+}
+
+.productInfo p {
+  font-weight: 600;
+}
+
+.topActions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-125%);
+  padding-inline: 1.5rem;
+}
+
+.topActions button,
+.topActions a {
+  background-color: white;
+  padding: 10px 15px;
+  color: #121212;
+  border-radius: 12px;
+  font-size: 17px;
+}
+
+.topActions button:last-of-type {
+  border-radius: 100%;
+  aspect-ratio: 1;
+  height: 100%;
+  height: 45px;
+  width: 45px;
+  display: grid;
+  place-content: center;
+  font-size: 18px;
+}
+
+.productTypeSelector {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.chipHolder {
+  display: flex;
+  flex: 1;
+  background-color: rgb(213 214 223);
+}
+
+.chipHolder span {
+  flex: 1;
+  display: grid;
+  place-content: center;
+}
+
+.chipHolder span.active {
+  background-color: rgba(193, 195, 203, 1);
+}
+
+.productTypeSelector button {
+  font-size: 18px;
+  padding: 20px 30px;
+  background-color: rgb(122, 186, 26);
+  color: whitesmoke;
+}
+
+.productTypeSelector button:active,
+.productTypeSelector button:hover {
+  background-color: rgb(97, 143, 23);
+}
+.contentHolder .description {
+  margin-bottom: 10px;
+  padding-inline: 1rem;
+}
+
+.keyFacts {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding-inline: 1rem;
+  margin-bottom: 20px;
+}
+
+.keyFacts ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.keyFacts ul li {
+  display: flex;
+  gap: 10px;
+}
+
+.keyFacts ul li i {
+  font-size: 22px;
+  color: rgb(97, 143, 23);
+}
+
+@media (min-width: 769px) {
+  .productPage {
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    padding: 3rem;
+    gap: 20px;
+    padding-top: 5rem;
+  }
+
+  .ratingReviews {
+    order: -1;
+    padding: 0;
+  }
+
+  .imageHolder {
+    position: unset;
+    z-index: 0;
+    margin-bottom: 20px;
+    height: 75vh;
+  }
+
+  .contentHolder {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
+  .productInfo {
+    padding-top: 0;
+  }
+
+  .contentHolder::after {
+    display: none;
+  }
+
+  .productInfo {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .productInfo > p {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .topActions {
+    position: relative;
+    transform: none;
+    display: none;
+  }
+
+  .productTypeSelector {
+    max-width: 400px;
+    cursor: pointer;
+  }
+
+  .contentHolder .description {
+    padding: 0;
+  }
+  .keyFacts {
+    padding: 0;
+  }
+
+  .keyFacts ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .keyFacts ul li {
+    align-items: center;
+  }
+
+  .keyFacts ul li i {
+    font-size: 26px;
+  }
+
+  .suggestedProducts {
+    display: none;
+    grid-column: 1 / span 2;
+  }
+}

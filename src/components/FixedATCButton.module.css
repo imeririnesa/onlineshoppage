@@ -1,0 +1,28 @@
+.fixedATCButton {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  width: 90%;
+  padding: 15px;
+  border-radius: 80px;
+  max-width: 320px;
+  background-color: rgb(122, 186, 26);
+  color: white;
+  font-size: 18px;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.fixedATCButtonOnView:hover {
+  background-color: rgb(95, 145, 20);
+}
+
+.fixedATCButtonOnView:active {
+  transform: translateX(-50%) scale(0.95);
+  background-color: rgb(95, 145, 20);
+}
+
+.fixedATCButtonOnView {
+  bottom: 20px;
+  transition: all 0.1s ease;
+}

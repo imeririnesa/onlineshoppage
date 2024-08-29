@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #333333;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.footer h1 {
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-self: stretch;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials a {
+  padding: 5px;
+  width: 45px;
+  aspect-ratio: 1;
+  background-color: #efefef;
+  display: grid;
+  place-content: center;
+  border-radius: 100%;
+}
+
+.socials a i {
+  font-size: 20px;
+  color: #232323;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.quickLinks {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 5px;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.right {
+  font-size: smaller;
+  justify-self: flex-end;
+  align-self: flex-end;
+}

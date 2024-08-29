@@ -1,0 +1,89 @@
+.cart {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  transform: translateX(110%);
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  transition: transform 0s ease 0.25s;
+}
+
+.cartActive {
+  transform: translateX(0);
+}
+
+.cart.cartActive {
+  transition: transform 0s ease;
+}
+
+.cartWrapper {
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  transition: transform 0.3s ease;
+  transform: translateX(110%);
+  display: flex;
+  flex-direction: column;
+}
+
+.cartActive .cartWrapper {
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.cartHeader {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 1;
+}
+
+.cartHeader p {
+  flex: 1;
+  padding: 15px 10px;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  color: #777;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cartToggleButton {
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.cartToggleButton i {
+  font-size: 17px;
+}
+
+p.active {
+  background-color: white;
+  border-bottom: 2px solid black;
+  color: #000;
+}
+
+.cartItemsHolder {
+  flex: 1;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -20px 20px -24px inset;
+  padding: 1rem;
+}
+
+.cartItemsHolder li {
+  z-index: 0;
+  margin-bottom: 5px;
+}
+
+.cartItemsHolder li:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 769px) {
+  .cartWrapper {
+    max-width: 480px;
+  }
+}

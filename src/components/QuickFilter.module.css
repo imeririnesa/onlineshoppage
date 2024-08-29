@@ -1,0 +1,22 @@
+.quickFilter {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.chip {
+  padding: 5px 10px;
+  background-color: #ddd;
+  color: #121212;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chip > input {
+  display: none;
+}
+
+.chip:has(input:checked) {
+  background-color: #292828;
+  color: white;
+}

@@ -1,0 +1,15 @@
+.price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.priceSale {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0, 6);
+}

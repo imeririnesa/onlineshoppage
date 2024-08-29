@@ -1,0 +1,11 @@
+.collections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 769px) {
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

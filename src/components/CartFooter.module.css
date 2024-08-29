@@ -1,0 +1,42 @@
+.cartFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.cartTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout button {
+  padding: 15px;
+  background: #5cc777;
+  color: white;
+  border-radius: 48px;
+  width: 100%;
+  font-size: 20px;
+}
+
+@media (min-width: 769px) {
+  .cartTotal h4 {
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+
+  .cartTotal p {
+    font-size: 18px;
+  }
+
+  .cartFooter {
+    gap: 20px;
+  }
+}

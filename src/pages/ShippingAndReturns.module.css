@@ -1,0 +1,24 @@
+.shippingAndReturns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shippingAndReturns h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.section p,
+.section ul {
+  margin-bottom: 5px;
+}
+.section ul li {
+  margin-bottom: 5px;
+}

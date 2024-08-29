@@ -1,0 +1,52 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  padding: 1rem;
+}
+
+.headerButton {
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  aspect-ratio: 1;
+}
+
+.toggleCartButton {
+  background-color: transparent;
+  border: none;
+  width: 35px;
+  aspect-ratio: 1;
+  position: relative;
+}
+.cartItemNumber {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: red;
+  color: white;
+  font-size: 13px;
+  display: grid;
+  place-content: center;
+}
+.toggleCartButton i {
+  transform: scale(2);
+}
+
+.headerButton > img {
+  width: 100%;
+  height: 100%;
+}
+
+.header nav ul {
+  list-style-type: none;
+  display: flex;
+}

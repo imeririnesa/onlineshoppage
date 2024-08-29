@@ -1,0 +1,15 @@
+.favIcon {
+  border: none;
+  background-color: white;
+  width: 35px;
+  min-width: 35px;
+  aspect-ratio: 1;
+  position: relative;
+  font-size: 16px;
+  display: grid;
+  place-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 3px;
+  border-radius: 100%;
+  align-self: flex-start;
+}
